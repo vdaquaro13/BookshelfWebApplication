@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+    <title>Virtual Bookshelf</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/harry-potter");
+    </style>
+    <img
+      src="https://i.pinimg.com/originals/8c/74/bb/8c74bb4e959d7211e27c10b5980cb970.jpg"
+      alt="Library"
+    />
+    <audio id="audio" src="https://archive.org/embed/HarryPotter-hedwigTheme"></audio>
+    <main>
+      <header>
+        <nav>
+          <div>
+            <span>
+              <h1>Vincent's Virtual Bookshelf</h1>
+            </span>
+            <span class="links">
+              <a href="about.html">About</a>
+              <a href="/">Home</a>
+              <a href="/contact.html">Contact</a>
+            </span>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <div>
+          <form id="add-book-form">
+            <label for="title"></label>
+            <input type="text" id="title" placeholder="Title" required />
+            <label for="author"></label>
+            <input type="text" id="author" placeholder="Author" required />
+            <label for="subjects"></label>
+            <input type="text" id="subjects" placeholder="Subjects" required />
+            <label for="language"></label>
+            <input type="text" id="language" placeholder="Language" required />
+            <button type="submit">Add Book</button>
+          </form>
+        </div>
+        <div id="app"></div>
+      </section>
+    </main>
+    <script src="js/book-data.js"></script>
+    <script src="js/book.js"></script>
+    <script src="js/bookshelf.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

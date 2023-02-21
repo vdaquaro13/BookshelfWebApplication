@@ -1,0 +1,80 @@
+img {  
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   
+    }
+  }
+
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0e1a40;
+    color: #946b2d;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    opacity: 99%;
+    border:solid lightgray 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 10px;
+}
+header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.links a{
+    color: lightgray;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+section {
+    padding-top: 220px;
+}
+  #add-book-form {
+    font-weight: bolder;
+    text-align: center;
+    
+    }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  li.book {
+    list-style: none;
+    width: 45%;
+    border: 1px solid lightgray;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #0e1a40;
+    opacity: 70%;
+  }
+
+  .about {
+    color: white;
+  }
+
+  .contact {
+    color: white;
+  }
