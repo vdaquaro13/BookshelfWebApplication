@@ -15,7 +15,15 @@ class Bookshelf {
           book.comments.push(comment);
         }
       }
+
+    sortBooksAlphabetically() {
+        this.books.sort((a, b) => a.title.localeCompare(b.title));
+      }
   
+    sortBooksReverseAlphabetically(arr) {
+        this.books.sort((a, b) => b.title.localeCompare(a.title));
+    }
+
     render() {
       const ul = document.createElement("ul");
   

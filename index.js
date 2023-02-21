@@ -31,5 +31,18 @@ form.addEventListener("submit", (event) => {
   form.reset();
 });
 
-let myAudio = document.querySelector('#audio');
-myAudio.play();
+const sortButton = document.querySelector('#sort-button');
+sortButton.addEventListener('click', () => {
+  bookshelf.sortBooksAlphabetically();
+  app.innerHTML = '';
+  app.append(bookshelf.render());
+});
+
+const sortReverseButton = document.querySelector('#sort-reverse-button');
+sortReverseButton.addEventListener('click', () => {
+  bookshelf.sortBooksReverseAlphabetically();
+  app.innerHTML = '';
+  app.append(bookshelf.render());
+});
+
+

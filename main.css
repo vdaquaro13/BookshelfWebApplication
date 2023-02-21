@@ -53,6 +53,11 @@ section {
     
     }
 
+.sorting-buttons{ 
+    margin-top: 10px;
+    text-align: center;
+}
+
   ul {
     display: flex;
     flex-wrap: wrap;
